@@ -10,3 +10,9 @@
   source .venv/bin/activate
   python main.py
   ```
+
+# Errors
+if drivers arent avaliable, reboot
+```shell
+sudo reboot now
+```
