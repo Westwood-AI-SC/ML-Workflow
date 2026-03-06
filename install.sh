@@ -67,13 +67,5 @@ else
     echo ">>> .env already exists – skipping copy."
 fi
 
-echo ""
-echo "============================================================"
-echo "  Done! Next steps:"
-echo ""
-echo "  1. Activate the venv:   source .venv/bin/activate"
-echo "  2. Edit credentials:    nano .env"
-echo "  3. Run training:        python main.py"
-echo "  4. All CLI options:     python main.py --help"
-echo "============================================================"
-
+echo " YOU MUST REBOOT THE SERVER FOR CUDA DRIVERS TO TAKE EFFECT! "
+echo " `sudo reboot now`"
