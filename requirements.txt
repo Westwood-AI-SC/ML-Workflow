@@ -2,4 +2,3 @@ ultralytics
 boto3
 roboflow
 python-dotenv
-# torch, torchvision, torchaudio are installed with CUDA in install.sh

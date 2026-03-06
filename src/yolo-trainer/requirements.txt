@@ -1,4 +1,0 @@
-ultralytics
-boto3
-roboflow
-python-dotenv

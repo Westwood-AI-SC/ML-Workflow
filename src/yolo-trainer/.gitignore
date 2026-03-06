@@ -1,9 +1,0 @@
-.env
-*.pt
-*.zip
-*.log
-__pycache__/
-*.pyc
-*.pyo
-.venv/
-runs/
