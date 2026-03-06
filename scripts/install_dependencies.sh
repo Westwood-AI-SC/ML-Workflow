@@ -1,0 +1,1 @@
+sudo apt install -y virtualenv python3-pip python3-dev build-essential unzip wget git

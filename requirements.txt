@@ -1,0 +1,3 @@
+ultralytics
+boto3
+# torch, torchvision, torchaudio are installed with CUDA in install.sh
