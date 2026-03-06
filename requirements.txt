@@ -1,3 +1,4 @@
 ultralytics
 boto3
+roboflow
 # torch, torchvision, torchaudio are installed with CUDA in install.sh
