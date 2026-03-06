@@ -21,7 +21,7 @@ read -rp "Install NVIDIA GPU drivers and CUDA toolkit? [y/N] " install_gpu
 if [[ "$install_gpu" =~ ^[Yy]$ ]]; then
     echo ">>> Installing GPU drivers and CUDA toolkit..."
     apt-get install -y nvidia-driver-525 nvidia-cuda-toolkit
-    echo ">>> GPU drivers installed."
+    echo ">>> GPU drivers instaleeled."
 else
     echo ">>> Skipping GPU driver installation."
 fi

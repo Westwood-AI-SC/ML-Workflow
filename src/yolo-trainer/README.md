@@ -6,25 +6,36 @@ A clean, public-safe YOLO model training pipeline that pulls datasets from **Rob
 
 ---
 
-## Quick start
+## Server workflow (SSH → clone → train)
 
-### 1. Clone & install
+This is the intended end-to-end flow on a fresh EC2 instance:
 
 ```bash
+# 1. Clone the repo
 git clone <repo-url>
 cd yolo-trainer
-sudo bash install.sh
+
+# 2. Install system packages, GPU drivers (optional), venv, and Python deps
+sudo ./install.sh
+# The script will:
+#   - ask whether to install NVIDIA drivers + CUDA
+#   - create .venv and install all requirements
+#   - copy .env.example → .env automatically
+
+# 3. Activate the virtual environment
 source .venv/bin/activate
+
+# 4. Fill in your credentials
+nano .env          # or: vi .env
+
+# 5. Run training
+python main.py
+
+# See all available CLI flags
+python main.py --help
 ```
 
-### 2. Configure
-
-```bash
-cp .env.example .env
-# Open .env and fill in your values
-```
-
-Required variables:
+### Required `.env` variables
 
 | Variable | Description |
 |---|---|
@@ -34,15 +45,7 @@ Required variables:
 | `ROBOFLOW_VERSION` | Dataset version number |
 | `AWS_BUCKET_NAME` | S3 bucket to upload results to |
 
-### 3. Run
-
-```bash
-# Use defaults from .env
-python main.py
-
-# See all available flags
-python main.py --help
-```
+Everything else has a sensible default and can be left as-is or overridden via CLI flag.
 
 ---
 
