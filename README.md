@@ -2,13 +2,11 @@
 
 1. clone repo
 1. install deps
-```
-sudo ./install.sh
-```
+  ```sudo ./install.sh```
 
 1. fill in `.env` with your credentials
 1. run training
-```
-source .venv/bin/activate
-python main.py
-```
+  ```shell
+  source .venv/bin/activate
+  python main.py
+  ```
